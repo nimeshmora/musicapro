@@ -22,7 +22,7 @@ class Handler:
 
     def createGUI(self):
         builder = Gtk.Builder()
-        builder.add_from_file("../../res/musicagui.glade")
+        builder.add_from_file("../../res/musicaprogui.glade")
         builder.connect_signals(Handler())
 
         window = builder.get_object("window1")

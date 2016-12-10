@@ -306,6 +306,7 @@
                   <object class="GtkNotebook" id="notebook1">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tab_pos">left</property>
                     <child>
                       <object class="GtkEntry" id="entry1">
                         <property name="visible">True</property>
@@ -316,7 +317,8 @@
                       <object class="GtkLabel" id="label1">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes"> 1</property>
+                        <property name="label"> 1s</property>
+                        <property name="lines">4</property>
                       </object>
                       <packing>
                         <property name="tab_expand">True</property>
@@ -334,15 +336,40 @@
                       </packing>
                     </child>
                     <child type="tab">
-                      <object class="GtkLabel" id="label3">
+                      <object class="GtkBox" id="box5">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">page 3</property>
-                        <property name="lines">4</property>
+                        <child>
+                          <object class="GtkLabel" id="label3">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="label" translatable="yes">My Library</property>
+                            <property name="lines">4</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="padding">6</property>
+                            <property name="pack_type">end</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkImage" id="image3">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="stock">gtk-indent</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
                       </object>
                       <packing>
                         <property name="position">3</property>
-                        <property name="tab_fill">False</property>
+                        <property name="tab_expand">True</property>
                       </packing>
                     </child>
                     <child>
@@ -393,8 +420,9 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="expand">False</property>
+                    <property name="expand">True</property>
                     <property name="fill">True</property>
+                    <property name="padding">10</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
